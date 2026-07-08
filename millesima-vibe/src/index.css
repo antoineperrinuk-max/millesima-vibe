@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import "tailwindcss";
+
+/* Georges Design System — tokens from Figma variable defs */
+@theme {
+  /* Colors */
+  --color-content-inverse: #ffffff;
+  --color-content-primary: #2f2c2a;
+  --color-content-disabled: #9b9894;
+  --color-button-primary: #000000;
+  --color-button-secondary: #ffffff;
+  --color-button-disable: #f3f3f3;
+
+  /* Spacing */
+  --spacing-gds-xxs: 4px;
+  --spacing-gds-xs: 8px;
+  --spacing-gds-small: 12px;
+  --spacing-gds-medium: 16px;
+  --spacing-gds-xxl: 32px;
+
+  /* Radius */
+  --radius-gds-button: 999px;
+
+  /* Fixed heights — Figma frame sizes (border included via box-border) */
+  --spacing-gds-button-lg: 48px;
+  --spacing-gds-button-sm: 40px;
+
+  /* Border — Figma token: selected (internal stroke) */
+  --border-width-gds-selected: 2px;
+
+  /* Typography */
+  --font-gds-family: Montserrat, ui-sans-serif, system-ui, sans-serif;
+  --text-gds-button: 14px;
+  --leading-gds-button: 24px;
+  --tracking-gds-large: 0.8px;
+
+  /* State overlays (Figma: State/Hover-overlay, State/Active-overlay) */
+  --color-overlay-hover: rgb(255 255 255 / 0.25);
+  --color-overlay-press: rgb(255 255 255 / 0.5);
+}
