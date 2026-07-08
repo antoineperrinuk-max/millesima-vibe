@@ -1,8 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import "tailwindcss";
 
 /* Georges Design System — tokens from Figma variable defs */
 @theme {
+
+   /* Breakpoints */
+   --breakpoint-sm: 640px;
+   --breakpoint-md: 768px;
+   --breakpoint-lg: 1024px;
+   --breakpoint-xl: 1440px;
+ 
   /* Colors */
   --color-content-inverse: #ffffff;
   --color-content-primary: #2f2c2a;
@@ -17,15 +24,26 @@
   --spacing-gds-small: 12px;
   --spacing-gds-medium: 16px;
   --spacing-gds-xxl: 32px;
+  --spacing-gds-none: 0px;
+
+  /* Typography — Accordion (Figma: Subsection title, Body/Body) */
+  --text-gds-heading-small: 20px;
+  --leading-gds-heading-small: 24px;
+  --tracking-gds-small: -0.4px;
+  --text-gds-body: 14px;
+  --leading-gds-body: 24px;
+  --tracking-gds-normal: 0px;
 
   /* Radius */
   --radius-gds-button: 999px;
 
   /* Fixed heights — Figma frame sizes (border included via box-border) */
+  --spacing-gds-button-md: 48px;
   --spacing-gds-button-lg: 48px;
   --spacing-gds-button-sm: 40px;
 
-  /* Border — Figma token: selected (internal stroke) */
+  /* Border — Figma tokens */
+  --border-width-gds-default: 1px;
   --border-width-gds-selected: 2px;
 
   /* Typography */
@@ -34,7 +52,11 @@
   --leading-gds-button: 24px;
   --tracking-gds-large: 0.8px;
 
-  /* State overlays (Figma: State/Hover-overlay, State/Active-overlay) */
+  /* State overlays — Primary (Figma: State/Hover-overlay, State/Active-overlay) */
   --color-overlay-hover: rgb(255 255 255 / 0.25);
   --color-overlay-press: rgb(255 255 255 / 0.5);
+
+  /* State overlays — Secondary (Figma: State/Hover-overlay-inverse, State/Active-overlay-inverse) */
+  --color-overlay-hover-inverse: rgb(0 0 0 / 0.08);
+  --color-overlay-press-inverse: rgb(0 0 0 / 0.16);
 }

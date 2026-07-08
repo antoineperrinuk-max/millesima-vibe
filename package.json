@@ -1,4 +1,11 @@
 {
+  "name": "vibe",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix millesima-vibe",
+    "build": "npm run build --prefix millesima-vibe",
+    "preview": "npm run preview --prefix millesima-vibe"
+  },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.2",
     "tailwindcss": "^4.3.2"
